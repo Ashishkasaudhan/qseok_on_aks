@@ -1,5 +1,6 @@
 ## Installing QSEoK on Azure Kubernetes Services (AKS)
-You need the Azure CLI. Open Powershell
+
+Clone or download this git and put it into a new folder of your choice. You will need the <a href="https://docs.microsoft.com/en-us/cli/azure/install-azure-cli">Azure CLI</a> to work. Open Powershell or SH and login to your Azure account.
 ```
 az login
 ```

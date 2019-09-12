@@ -102,9 +102,9 @@ Lets install the "tiller pod" in the cluster and upgrade to the latest version
 ```
 helm init --upgrade --wait  
 ```
-AKS is provisioned with RBAC (Role Based Access Control) enabled. In order for HELM to successfully operate in an RBAC enabled cluster a service account needs to be created from this <a href="https://raw.githubusercontent.com/ChristofSchwarz/qs_on_Kubernetes/master/AKS/serviceaccount.yaml">yaml-file</a>
+AKS is provisioned with RBAC (Role Based Access Control) enabled. In order for HELM to successfully operate in an RBAC enabled cluster a service account needs to be created from this <a href="https://raw.githubusercontent.com/ChristofSchwarz/qseok_on_aks/master/serviceaccount.yaml">yaml-file</a>
 ```
-kubectl create -f https://raw.githubusercontent.com/ChristofSchwarz/qs_on_Kubernetes/master/AKS/serviceaccount.yaml
+kubectl create -f https://raw.githubusercontent.com/ChristofSchwarz/qseok_on_aks/master/serviceaccount.yaml
 ```
 (Alternatively, you can also download the file and use it in the -f parameter locally)
 

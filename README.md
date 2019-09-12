@@ -84,9 +84,9 @@ Bind the cluster role
 ```
 kubectl create clusterrolebinding system:azure-cloud-provider --clusterrole=system:azure-cloud-provider --serviceaccount=kube-system:persistent-volume-binder
 ```
-Create a storage-class from this <a href="https://raw.githubusercontent.com/ChristofSchwarz/qs_on_Kubernetes/master/AKS/storageclass.yaml">yaml-file</a> using this command
+Create a storage-class from this <a href="https://raw.githubusercontent.com/ChristofSchwarz/qseok_on_aks/master/storageclass.yaml">yaml-file</a> using this command
 ```
-kubectl apply -f https://raw.githubusercontent.com/ChristofSchwarz/qs_on_Kubernetes/master/AKS/storageclass.yaml
+kubectl apply -f https://raw.githubusercontent.com/ChristofSchwarz/qseok_on_aks/master/storageclass.yaml
 ```
 (Alternatively, you can also download the file and use it in the -f parameter locally)
 

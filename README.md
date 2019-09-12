@@ -55,9 +55,12 @@ az storage account create -g MC_rg-kubernetes_cl-kubernetes_westeurope -n accoun
 ## Installing kubectl for Powershell
 
  * create folder C:\Kubernetes and navigate to that folder
- * Remember the version of Kubernetes which you installed before and adjust the link below if yours is different than v1.13.10
+ * Remember the **version of Kubernetes** which you installed before and adjust the link below if yours is different than v1.13.10
  * Download kubectl from 
 https://storage.googleapis.com/kubernetes-release/release/v1.10.13/bin/windows/amd64/kubectl.exe into C:\Kubernetes
+```
+Invoke-WebRequest -Uri https://storage.googleapis.com/kubernetes-release/release/v1.10.13/bin/windows/amd64/kubectl.exe -outfile kubectl.exe
+```
  * kubectl.exe should now be available in C:\Kubernetes. You may want add C:\Kubernetes to the „PATH“ variable of Windows, so that you can type the kubectl command from within other folder in Powershell or Cmd. If not, you will have to use ".\kubectl" instead of "kubectl" in all the following commands in order to call the local kubectl.exe from the current folder
 
 See if your context of kubectl is our (new) cluster

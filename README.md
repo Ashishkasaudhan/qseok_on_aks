@@ -132,7 +132,7 @@ helm search qlik-stable --versions
 helm search qlik-edge --versions
 ```
 ## Deploy QSEoK first time
-Use the following helm commands to deploy QSEoK, download this <a href="https://raw.githubusercontent.com/ChristofSchwarz/qs_on_Kubernetes/master/AKS/qliksense.yaml">qliksense.yaml file</a> from this github into your current folder. The deployment installs a customresourcedefinition first (qliksense-init) and then the qliksense chart. (you can choose below between qlik-stable or qlik-edge repo, just as we added it with "helm repo add" before)
+Use the following helm commands to deploy QSEoK, download <a href="https://raw.githubusercontent.com/ChristofSchwarz/qseok_on_aks/master/qliksense.yaml">this .yaml file</a> from this github into your current folder. The deployment installs a customresourcedefinition first (qliksense-init) and then the qliksense chart. (you can choose below between qlik-stable or qlik-edge repo, just as we added it with "helm repo add" before)
 ```
 helm install --name qlik-init qlik-stable/qliksense-init
 helm install --name qlik qlik-stable/qliksense -f qliksense.yaml
